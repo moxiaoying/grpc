@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.learn.demo;
+
+message Data{
+	string text = 1;
+}
+
+service DoFormat{
+	rpc Text2Upper(Data) returns (Data){}
+}
